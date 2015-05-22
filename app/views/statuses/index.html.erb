@@ -1,0 +1,33 @@
+<h1>All Statuses</h1>
+<hr>
+<div class="list-group">
+  <% @statuses.each do |status| %>
+  <div class="media list-group-item">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="http://lorempixel.com/64/64/people" alt="<%= status.name %>">
+      </a>
+    </div>
+    <div class="media-body ">
+      <h4 class="media-heading"><%= status.name %></h4>
+      <%= status.content %>
+      <hr>
+      <div class="row text-center ">
+        <div class="pdg col-md-4 text-capitalize">
+          <%= link_to time_ago_in_words(status.created_at)+ " ago", status%>
+        </div>
+        <div class="pdg col-md-4">
+          <%= link_to 'Edit', edit_status_path(status), class: "btn btn-block btn-primary"  %>
+        </div>
+        <div class="pdg col-md-4">
+          <%= link_to 'Destroy', status, class: "btn btn-block btn-danger" , method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to 'New Status', new_status_path %>
