@@ -6,6 +6,8 @@ gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+gem 'devise'
+
 # Boostrap 
 gem 'bootstrap-sass', '~> 3.3.4'
 

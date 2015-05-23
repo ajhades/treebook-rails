@@ -1,5 +1,7 @@
 <h1>All Statuses</h1>
 <hr>
+<%= link_to 'New Status', new_status_path, class: "btn btn-success" %>
+<hr>
 <div class="list-group">
   <% @statuses.each do |status| %>
   <div class="media list-group-item">
@@ -30,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Status', new_status_path %>
+
