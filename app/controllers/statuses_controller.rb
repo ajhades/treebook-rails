@@ -68,7 +68,8 @@ class StatusesController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+    # Agregar 'user_id' para insertar este campo a traves del formulario de Statues
     def status_params
-      params.require(:status).permit(:name, :content)
+      params.require(:status).permit(:name, :content,:user_id)
     end
 end

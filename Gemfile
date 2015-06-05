@@ -8,6 +8,8 @@ gem 'sqlite3'
 
 gem 'devise'
 
+gem 'simple_form'
+
 # Boostrap 
 gem 'bootstrap-sass', '~> 3.3.4'
 

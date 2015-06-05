@@ -7,11 +7,11 @@
   <div class="media list-group-item">
     <div class="media-left">
       <a href="#">
-        <img class="media-object" src="http://lorempixel.com/64/64/people" alt="<%= status.name %>">
+        <img class="media-object" src="http://lorempixel.com/64/64/people" alt="<%= status.user.full_name %>">
       </a>
     </div>
     <div class="media-body ">
-      <h4 class="media-heading"><%= status.name %></h4>
+      <h4 class="media-heading"><%= status.user.full_name %></h4>
       <%= status.content %>
       <hr>
       <div class="row text-center ">
